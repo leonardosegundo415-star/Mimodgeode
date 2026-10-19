@@ -1,0 +1,21 @@
+{
+	"geode": "5.11.2",
+	"gd": {
+		"win": "2.2081",
+		"android": "2.2081"
+	},
+	"version": "v1.1.0",
+	"id": "community.predictivebuffer-mobile",
+	"name": "Predictive Input Buffer (Mobile)",
+	"developer": "Recreación móvil · concepto de lilWC",
+	"description": "Buffer de inputs de 2 a 16 ticks (press y release de wave). Versión recreada para Android.",
+	"settings": {
+		"stage": {
+			"type": "string",
+			"name": "Nivel de buffer (all/wave, en ticks)",
+			"description": "2/2, 4/4, 8/8, 16/8 u OFF. También se puede cambiar desde el menú de pausa dentro del nivel.",
+			"default": "2/2",
+			"one-of": ["2/2", "4/4", "8/8", "16/8", "OFF"]
+		}
+	}
+}
