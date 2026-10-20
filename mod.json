@@ -4,7 +4,7 @@
 		"win": "2.2081",
 		"android": "2.2081"
 	},
-	"version": "v1.1.0",
+	"version": "v1.2.0",
 	"id": "community.predictivebuffer-mobile",
 	"name": "Predictive Input Buffer (Mobile)",
 	"developer": "Recreación móvil · concepto de lilWC",
@@ -13,9 +13,22 @@
 		"stage": {
 			"type": "string",
 			"name": "Nivel de buffer (all/wave, en ticks)",
-			"description": "2/2, 4/4, 8/8, 16/8 u OFF. También se puede cambiar desde el menú de pausa dentro del nivel.",
+			"description": "2/2, 4/4, 8/8, 16/8, TEST (60 ticks, solo para comprobar que funciona) u OFF. También se cambia desde el menú de pausa.",
 			"default": "2/2",
-			"one-of": ["2/2", "4/4", "8/8", "16/8", "OFF"]
+			"one-of": [
+				"2/2",
+				"4/4",
+				"8/8",
+				"16/8",
+				"TEST",
+				"OFF"
+			]
+		},
+		"show-saves": {
+			"type": "bool",
+			"name": "Mostrar aviso cuando el buffer actúa",
+			"description": "Muestra HOLD o ORB arriba de la pantalla cada vez que el buffer salva un input.",
+			"default": true
 		}
 	}
 }
